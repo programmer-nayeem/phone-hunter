@@ -21,8 +21,18 @@
 
         <!-- Search Result -->
         <section class="lg:mx-16 md:mx-8 mx-5 mt-10">
+            <div id="loading-spinner" class="text-center my-56 hidden">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 content-center">
             </div>
+
+            <!-- Show all button -->
+            <div id="show-all-container" class="hidden text-center mt-6">
+                <button onclick="showAll()" class="btn bg-gray-100">Show ALl</button>
+            </div>
+
         </section>
     </main>
 
