@@ -8,12 +8,19 @@
     <title>Phone Hunting Impletion</title>
 </head>
 <body>
-    <header>
-        <h2 class="text-5xl">Hunting Phone</h2>
+    <header class="lg:mx-16 md:mx-8 mx-5">
+        <h2 class="sm:mt-8 lg:text-5xl md:text-4xl text-4xl font-semibold ">Hunting Phone</h2>
     </header>
 
-    <main>
-        <section class="mx-16">
+    <main class="">
+        <!-- Search bar -->
+        <section class="lg:mx-16 md:mx-8 mx-5 bg-gray-100 p-4 m-4 rounded-lg flex justify-between  gap-2">
+            <input id="search-field" type="text" placeholder="Search Phones..." class="input input-bordered w-full" />
+            <button onclick="handelSearch()" class="btn bg-gray-200">Search Phones</button>
+        </section>
+
+        <!-- Search Result -->
+        <section class="lg:mx-16 md:mx-8 mx-5 mt-10">
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 content-center">
             </div>
         </section>
