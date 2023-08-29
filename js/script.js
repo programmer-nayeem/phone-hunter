@@ -66,4 +66,9 @@ const toggleLoadingSpinner = (isLoading) =>{
     }
 }
 
+// handle show all
+
+
+
+
 // loadPhone();
